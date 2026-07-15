@@ -489,7 +489,7 @@ const PRESET_TEMPLATES = [
 
 export default function App() {
   // Load initial form states from localStorage or use beautiful defaults
-  const [companyName, setCompanyName] = useState(() => localStorage.getItem('solar_id_companyName') || '');
+  const [companyName, setCompanyName] = useState(() => localStorage.getItem('solar_id_companyName') || 'NEXTGEN SOLAR');
   const [companySlogan, setCompanySlogan] = useState(() => localStorage.getItem('solar_id_companySlogan') || '');
   const [logoPreset, setLogoPreset] = useState(() => localStorage.getItem('solar_id_logoPreset') || 'sun_spark');
   const [customLogoUrl, setCustomLogoUrl] = useState(() => localStorage.getItem('solar_id_customLogo') || '');
@@ -721,7 +721,7 @@ export default function App() {
 
   const resetToDefaults = () => {
     if (window.confirm("Are you sure you want to clear all fields and start fresh?")) {
-      setCompanyName('');
+      setCompanyName('NEXTGEN SOLAR');
       setCompanySlogan('');
       setLogoPreset('sun_spark');
       setCustomLogoUrl('');
@@ -1067,7 +1067,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="text-lg font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-amber-400 bg-clip-text text-transparent">
-                SOLARIA ID FORGE
+                NEXTGEN SOLAR ID FORGE
               </h1>
               <p className="text-[11px] text-slate-400 font-medium tracking-wide">
                 PROFESSIONAL SOLAR REPRESENTATIVE CR80 ID BUILDER
@@ -1194,7 +1194,7 @@ export default function App() {
                       value={companyName}
                       onChange={(e) => setCompanyName(e.target.value.toUpperCase())}
                       className="bg-slate-900 border border-slate-800 rounded-lg py-2 pl-9 pr-4 text-sm w-full focus:outline-none focus:ring-1 focus:ring-amber-500 focus:border-amber-500 text-white font-bold"
-                      placeholder="e.g. SOLARIA SOLUTIONS"
+                      placeholder="e.g. NEXTGEN SOLAR"
                       maxLength={32}
                     />
                   </div>
@@ -1694,7 +1694,7 @@ export default function App() {
                         {renderSelectedLogo("w-8 h-8 flex-shrink-0")}
                         <div className="flex-1 min-w-0 leading-none">
                           <h3 className={`text-xs font-black tracking-wider leading-tight truncate uppercase ${themeStyles.textHeading}`}>
-                            {companyName || 'SOLAR CO'}
+                            {companyName || 'NEXTGEN SOLAR'}
                           </h3>
                           <span className="text-[8px] tracking-widest text-slate-400 uppercase font-semibold block leading-none mt-0.5 truncate">
                             {companySlogan || 'SUSTAINABLE POWER'}
@@ -1856,7 +1856,7 @@ export default function App() {
                           {renderSelectedLogo("w-7.5 h-7.5 flex-shrink-0")}
                           <div className="leading-none truncate">
                             <h3 className={`text-xs font-black tracking-wider leading-none uppercase truncate ${themeStyles.textHeading}`}>
-                              {companyName || 'SOLAR CO'}
+                              {companyName || 'NEXTGEN SOLAR'}
                             </h3>
                             <span className="text-[7.5px] tracking-widest text-slate-400 uppercase font-semibold block leading-none mt-1 truncate">
                               {companySlogan || 'SUSTAINABLE POWER'}
@@ -2058,7 +2058,7 @@ export default function App() {
           {/* Header instructions block */}
           <div className="text-center border-b-2 border-slate-200 pb-4">
             <h1 className="text-xl font-black text-slate-800 uppercase tracking-widest flex items-center justify-center gap-2">
-              ⚡ SOLARIA Representative ID Print Sheet
+              ⚡ NEXTGEN SOLAR Representative ID Print Sheet
             </h1>
             <p className="text-[11px] text-slate-500 font-bold tracking-wider mt-1 uppercase">
               US Letter Format • 100% Actual Scale • Print in full color
@@ -2102,7 +2102,7 @@ export default function App() {
                   <div className="flex items-center gap-1.5 border-b border-slate-800/60 pb-1.5">
                     {renderSelectedLogo("w-5.5 h-5.5 flex-shrink-0")}
                     <div className="leading-none min-w-0">
-                      <span className="text-[8px] font-black text-white block uppercase tracking-wide truncate">{companyName || 'SOLAR CO'}</span>
+                      <span className="text-[8px] font-black text-white block uppercase tracking-wide truncate">{companyName || 'NEXTGEN SOLAR'}</span>
                       <span className="text-[5.5px] text-slate-400 block uppercase truncate leading-none mt-0.5">{companySlogan || 'POWERING TOMORROW'}</span>
                     </div>
                   </div>
@@ -2149,8 +2149,8 @@ export default function App() {
 
           {/* Footer print disclaimer info */}
           <div className="border-t-2 border-slate-200 pt-3 flex items-center justify-between text-[9px] text-slate-400 font-medium">
-            <span>Corporate Accreditations: Solaria Energy Grid Systems Inc.</span>
-            <span>Created via Solaria ID Forge • {new Date().toLocaleDateString()}</span>
+            <span>Corporate Accreditations: NextGen Solar Energy Grid Systems Inc.</span>
+            <span>Created via NextGen Solar ID Forge • {new Date().toLocaleDateString()}</span>
           </div>
 
         </div>
