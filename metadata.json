@@ -1,0 +1,6 @@
+{
+  "name": "Solar Agent ID Card Generator",
+  "description": "Generate, customize, and export professional, high-quality, print-ready solar company agent ID cards as PDFs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
